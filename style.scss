@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+$ruler: 16px;
+$color-bg: #ebecf0;
+$color-shadow: #babecc;
+$color-white: #fff;
+
+body,
+html {
+  background-color: $color-bg;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body,
+input,
+button {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: -0.2px;
+  font-size: $ruler;
+}
+form {
+  padding: $ruler;
+  width: $ruler * 20;
+  margin: 0 auto;
+}
+
+button,
+input {
+  border: 0;
+  outline: 0;
+  font-size: $ruler;
+  border-radius: $ruler * 20;
+  padding: $ruler;
+  background-color: $color-bg;
+  text-shadow: 1px 1px 0 $color-white;
+}
+
+input {
+  margin-right: $ruler/2;
+  box-shadow: inset 2px 2px 5px $color-shadow, inset -5px -5px 10px $color-white;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+  appearance: none;
+  -webkit-appearance: none;
+
+  &:focus {
+    box-shadow: inset 1px 1px 2px $color-shadow,
+      inset -1px -1px 2px $color-white;
+  }
+}
+
+button {
+  color: #61677c;
+  font-weight: bold;
+  box-shadow: -5px -5px 20px $color-white, 5px 5px 20px $color-shadow;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  font-weight: 600;
+
+  &:hover {
+    box-shadow: -2px -2px 5px $color-white, 2px 2px 5px $color-shadow;
+  }
+
+  &:active {
+    box-shadow: inset 1px 1px 2px $color-shadow,
+      inset -1px -1px 2px $color-white;
+  }
+}
+
+#message-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: #61677c;
+  width: 100%;
+  height: 60vh;
+  margin: 20px;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 20px;
+  transition: all 0.2s ease-in-out;
+  overflow-y: scroll;
+}
+#messageBox {
+  margin-right: 150px;
+  font-weight: bold;
+  font-size: 20px;
+  border-bottom: 2px solid #61677c;
+}
+
+#send-container {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 50px;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px $color-shadow;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $color-shadow;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #61677c;
+}

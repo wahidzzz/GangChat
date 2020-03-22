@@ -1,0 +1,25 @@
+{
+  "name": "gangchat",
+  "version": "1.0.0",
+  "description": "This is a Web based chat appilcation created for Tylor Gang",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wahidzzz/GangChat.git"
+  },
+  "author": "Wahid Shaikh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wahidzzz/GangChat/issues"
+  },
+  "homepage": "https://github.com/wahidzzz/GangChat#readme",
+  "dependencies": {
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}

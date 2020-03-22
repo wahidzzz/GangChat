@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+body,
+html {
+  background-color: #ebecf0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body,
+input,
+button {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: -0.2px;
+  font-size: 16px;
+}
+
+form {
+  padding: 16px;
+  width: 320px;
+  margin: 0 auto;
+}
+
+button,
+input {
+  border: 0;
+  outline: 0;
+  font-size: 16px;
+  border-radius: 320px;
+  padding: 16px;
+  background-color: #ebecf0;
+  text-shadow: 1px 1px 0 #fff;
+}
+
+input {
+  margin-right: 8px;
+  -webkit-box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;
+          box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+}
+
+input:focus {
+  -webkit-box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
+          box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
+}
+
+button {
+  color: #61677c;
+  font-weight: bold;
+  -webkit-box-shadow: -5px -5px 20px #fff, 5px 5px 20px #babecc;
+          box-shadow: -5px -5px 20px #fff, 5px 5px 20px #babecc;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:hover {
+  -webkit-box-shadow: -2px -2px 5px #fff, 2px 2px 5px #babecc;
+          box-shadow: -2px -2px 5px #fff, 2px 2px 5px #babecc;
+}
+
+button:active {
+  -webkit-box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
+          box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
+}
+
+#message-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #61677c;
+  width: 100%;
+  height: 60vh;
+  margin: 20px;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 20px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  overflow-y: scroll;
+}
+
+#messageBox {
+  margin-right: 150px;
+  font-weight: bold;
+  font-size: 20px;
+  border-bottom: 2px solid #61677c;
+}
+
+#send-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 50px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px #babecc;
+          box-shadow: inset 0 0 5px #babecc;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #babecc;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #61677c;
+}
+/*# sourceMappingURL=style.css.map */
